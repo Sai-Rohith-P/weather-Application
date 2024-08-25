@@ -225,7 +225,7 @@ body {
 }
 @media screen and (max-width:576px) {
     body{
-        height: 74vh;
+        height: 575px;
     }
     .container{
         margin-top: 180px;
