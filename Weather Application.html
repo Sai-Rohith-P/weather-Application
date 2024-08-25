@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application || Designed By Rohith Sai || Using openweathermap API's</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topfield">
+            <img src="locationpng.svg" id="locatin">
+            <input type="text" id="input" placeholder=" Enter Your Location">
+            <img src="searched.svg" id="search">
+        </div>
+        <div id="details">
+            <div class="middle" id="middle">
+                <img src="clear.png" id="imgs">
+                <span id="temp">
+                    <span id="temp-number">0</span>
+                    <span class="temp-unit"> <span class="degree-symbol">&#176;</span>C</span>
+                </span>
+    
+                <!-- <span id="temp">16 <span style="font-size: 26px; margin-top: -30px;">&#176;</span>C</span> -->
+                <span id="temptext">clear cloud</span>
+            </div>
+            <div class="bottom">
+                <div class="left" id="leff">
+                    <img src="water.svg" id="water">
+                    <div class="lefttext">
+                        <div class="humidity">
+                            <span id="humidityper">0</span>
+                            <span class="per">%</span>
+                        </div>
+                        <span class="humidititext" style="display: block;">Humidity</span>
+                    </div>
+                </div>
+                <div class="right" id="rt">
+                    <img src="Air.svg" id="air">
+                    <div class="lefttext">
+                        <div class="humidity" style="display: flex; gap: 5px;">
+                            <span id="windspeed">0</span>
+                            <span class="per">km/h</span>
+                        </div>
+                        <span class="windsppedtext">Wind Speed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="found" id="citynotfound">
+            <img src="tryagain.png">
+            <p>Oop's City is Not Found.</p>
+        </div>
+        <div class="networkerror" id="nwe">
+            <p>Network Error!! Please Connect Your Internet</p>
+        </div>
+    </div>
+    <script src="logics.js"></script>
+</body>
+
+</html>
